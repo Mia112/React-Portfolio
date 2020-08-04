@@ -1,0 +1,217 @@
+/*****************
+   HOME STYLES
+ *****************/
+
+#home-section {
+    background: #202736;
+    background: linear-gradient(to bottom, #181d23 0%, #202736 80%);
+
+    position: relative;
+    min-height: 100vh;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#home-section .container {
+
+    width: fit-content;
+    position: absolute;
+    margin-top: 70px;
+    right: 0;
+    top: 50%;
+    right: 25%;
+    opacity: 0;
+    transform: translate(0, -50%);
+    animation: text-fade-in 1000ms 800ms forwards;
+}
+
+@keyframes text-fade-in {
+    from {
+        right: 0;
+    }
+
+    to {
+        opacity: 1;
+        right: 25%;
+    }
+}
+
+#home-section .container h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: italic;
+    color: #fafafa;
+    line-height: 1rem;
+}
+
+#home-section .container h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #fafafa;
+    margin-top: 2rem;
+}
+
+#home-section .container .buttons {
+    display: flex;
+    margin-top: 3rem;
+}
+
+#home-section .container .buttons a,
+#home-section .container .buttons a:visited {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #fafafa;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#home-section .container .buttons a:hover,
+#home-section .container .buttons a:active {
+    border: 1px solid #66FCF1;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 100px -20px #66FCF1;
+}
+
+#home-section .container .buttons a.cta,
+#home-section .container .buttons a.cta:visited {
+    background: #45A29E;
+    border: 1px solid transparent;
+    color: #fafafa;
+    font-weight: bold;
+}
+
+#home-section .container .buttons a.cta:hover,
+#home-section .container .buttons a.cta:active {
+    background: transparent;
+    border: 1px solid #66FCF1;
+}
+
+#home-section .container .buttons a:first-child {
+    margin-right: 1rem;
+}
+
+.line {
+    display: block;
+}
+
+.color {
+    color: #66FCF1;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 649px) {
+    #home-section .container {
+        right: 50%;
+        top: 10%;
+        width: 70%;
+        transform: translate(50%, 0);
+        animation: text-fade-in 1000ms 800ms forwards;
+    }
+
+    @keyframes text-fade-in {
+        from {
+            right: 0;
+        }
+
+        to {
+            opacity: 1;
+            right: 50%;
+        }
+    }
+
+}
+
+/*****************
+   ABOUT STYLES
+ *****************/
+
+#about {
+    min-height: 100vh;
+    font-size: 1.4rem;
+    color: #082930;
+    position: relative;
+    display: flex;
+    background: #fafafa;
+    justify-content: center;
+    align-items: center;
+    margin: -100px 0 140px;
+    z-index: 1;
+
+}
+
+
+/*****************
+    PROJECTS STYLES
+   *****************/
+
+#projects {
+    min-height: 100vh;
+    font-size: 1.4rem;
+    color: #fafafa;
+    position: relative;
+    display: flex;
+    background: #082930;
+    justify-content: center;
+    align-items: center;
+    margin: -100px 0 140px;
+    z-index: 1;
+}
+
+
+
+
+/*****************
+     CONTACT STYLES
+   *****************/
+
+#contact {
+    min-height: 100vh;
+    font-size: 1.4rem;
+    color: #082930;
+    position: relative;
+    display: flex;
+    background: #fafafa;
+    justify-content: center;
+    align-items: center;
+    margin: -100px 0 140px;
+    z-index: 1;
+}
+
+/*****************
+     FOOTER STYLES
+   *****************/
+
+footer {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    color: #fafafa;
+    background: #082930;
+    z-index: 0;
+}
+
+footer .wrapper {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    max-width: 1400px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 649px) {
+    footer .wrapper {
+        flex-direction: column;
+    }
+
+    footer .wrapper h3 {
+        padding-bottom: .8rem;
+    }
+}
